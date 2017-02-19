@@ -1,6 +1,8 @@
 # bash profile
 # [ -r ~/.bashrc ] && source ~/.bashrc
 
+# iterm2 Color Presets: flatland
+
 # some ls aliases
 alias ls='ls -G'
 alias ll='ls -alF'
@@ -8,13 +10,13 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # define colors
-RED="\e[31;m"
-GREEN="\e[32;m"
-YELLOW="\e[33;m"
-BLUE="\e[34;m"
-PURPLE="\e[35;m"
-CYAN="\e[36;m"
-WHITE="\e[37;m"
+RED="\e[0;31m"
+GREEN="\e[0;32m"
+YELLOW="\e[0;33m"
+BLUE="\e[0;34m"
+PURPLE="\e[0;35m"
+CYAN="\e[0;36m"
+WHITE="\e[0;37m"
 
 # function to get branch
 function git_branch {
@@ -28,4 +30,5 @@ function git_branch {
 }
 
 # PS1
+export TERM="screen-256color"
 export PS1="\[$YELLOW\][\u@\h]\[$RED\]\$(git_branch) \[$GREEN\]\w \[$WHITE\]\$ \[\e[0m\]"
