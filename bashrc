@@ -1,7 +1,8 @@
 # bash profile
 # [ -r ~/.bashrc ] && source ~/.bashrc
 
-# iterm2 Color Presets: flatland
+# iterm2 Color Presets: Hybrid 
+# iterm2 Font: Hack 12pt
 
 # some ls aliases
 alias ls='ls -G'
@@ -32,3 +33,6 @@ function git_branch {
 # PS1
 export TERM="screen-256color"
 export PS1="\[$YELLOW\][\u@\h]\[$RED\]\$(git_branch) \[$GREEN\]\w \[$WHITE\]\$ \[\e[0m\]"
+
+#duotai proxy
+source ~/.duotai_proxy
